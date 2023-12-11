@@ -1,0 +1,48 @@
+
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.degrees{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.item{
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: Tahoma, sans-serif;
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+}
+
+@media  (max-width:1000px) {
+    .degrees{
+        grid-template-columns: 1fr;
+    }
+}
